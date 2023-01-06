@@ -10,7 +10,7 @@ const Modal = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (modal.open == true) {
+    if (modal.open === true) {
       document.querySelector("body").style.overflow = "hidden";
     } else {
       document.querySelector("body").style.overflow = "initial";
