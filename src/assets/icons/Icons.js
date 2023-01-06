@@ -134,3 +134,14 @@ export function SmsIcon(props) {
     </svg>
   );
 }
+
+export function HamburgerMenu(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
+      <path
+        fill="currentColor"
+        d="M12 18H3v-2h9v2Zm9-5H3v-2h18v2Zm0-5h-9V6h9v2Z"
+      ></path>
+    </svg>
+  );
+}

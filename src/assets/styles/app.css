@@ -20,7 +20,7 @@ button {
   border-radius: 50%;
   position: fixed;
   top: 80%;
-  left: 93%;
+  right: 30px;
   color: white;
   background: linear-gradient(180deg, #1183b5 0%, #055a84 100%);
   box-shadow: 0px 4.25926px 28.963px rgba(33, 29, 248, 0.42);

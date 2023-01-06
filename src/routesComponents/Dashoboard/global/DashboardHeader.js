@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   ArrowDownIcon,
   BellIcon,
+  HamburgerMenu,
   MenuIcon,
   SearchIcon,
 } from "../../../assets/icons/Icons";
@@ -9,6 +10,7 @@ import { AccountFonctionnality } from "../../../dataRaws/AccountFonctionnality";
 import { Img } from "../../../ui-kits/kits";
 import { openModal } from "../../../store/actions/modalActions";
 import { useDispatch } from "react-redux";
+import { openMenu } from "../../../store/actions/menuActions";
 
 const DashboardHeader = () => {
   const [numberOfNotification, setNumberOFNotification] = useState(15);
@@ -17,8 +19,13 @@ const DashboardHeader = () => {
   return (
     <div className="dh-header">
       <div className="dh-header-left">
-        <h1>Tableau de bord</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <div>
+          <h1>Tableau de bord</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+        <span className="HamburgerMenu" onClick={() => dispatch(openMenu())}>
+          <HamburgerMenu />
+        </span>
       </div>
       <div className="dh-header-right">
         <div>

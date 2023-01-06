@@ -6,9 +6,7 @@
   padding-bottom: 40px;
   padding-right: 10px;
 }
-/* .dh-home section {
-  background-color: red;
-} */
+
 /* ------------------- dashboard home left ---------------------- */
 .dh-home .last-connexion {
   padding: 13px;
@@ -168,4 +166,29 @@
 
 .react-calendar__month-view__days__day--weekend {
   color: #14a5e4;
+}
+
+@media screen and (max-width: 968px) {
+  .dh-home {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .dh-home section {
+    margin: 10px;
+  }
+  .dh-home .dh-account-data {
+    grid-template-columns: 1fr;
+  }
+  .dh-home .dh-fonction {
+    grid-template-columns: 1fr;
+  }
+  .dh-last-section {
+    grid-template-columns: 1fr;
+  }
+  .dh-home .dh-account-data > div {
+    height: max-content;
+    padding: 20px;
+  }
 }

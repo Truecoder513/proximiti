@@ -48,6 +48,13 @@ const MyChart = ({ chartData, chartTitle }) => {
           options={{
             responsive: true,
             plugins: { legend: { display: false }, title: { display: false } },
+            scales: {
+              x: {
+                grid: {
+                  display: false,
+                },
+              },
+            },
           }}
         />
       </>
