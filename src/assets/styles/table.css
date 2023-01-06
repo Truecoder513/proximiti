@@ -1,0 +1,25 @@
+.dashboard-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #e1edff;
+  color: var(--colorPrimary);
+}
+td a {
+  color: blue;
+  text-decoration: underline;
+}

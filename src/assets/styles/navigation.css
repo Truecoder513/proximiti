@@ -1,0 +1,41 @@
+/* --------------------- sidebar ---------------------- */
+.dh-sideBar {
+  height: 100vh;
+  background: linear-gradient(180deg, #0e7eb6 0%, #0696dd 100%);
+  width: 15%;
+  position: fixed;
+  padding: 5vh 20px 0 20px;
+  z-index: 50000;
+}
+/* .dh-sideBar svg {
+  width: 20px;
+  height: 100%;
+} */
+.dh-sideBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 100px;
+}
+.dh-sideBar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+}
+.dh-sideBar ul li a img {
+  width: 15px;
+  height: 15px;
+  object-fit: initial;
+}
+.dh-filigrane {
+  position: absolute;
+  user-select: none;
+  width: 100%;
+  top: 63%;
+  left: 0;
+}
+.dh-filigrane img {
+  width: 100%;
+}

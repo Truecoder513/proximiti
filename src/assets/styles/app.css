@@ -1,0 +1,101 @@
+:root {
+  --colorPrimary: #2e74b5;
+}
+
+@font-face {
+  font-family: sf ui display;
+  src: url("../fonts/sf-ui-display-medium-58646be638f96.woff");
+}
+body {
+  font-family: sf ui display;
+  font-weight: normal;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.chatBubble {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 80%;
+  left: 93%;
+  color: white;
+  background: linear-gradient(180deg, #1183b5 0%, #055a84 100%);
+  box-shadow: 0px 4.25926px 28.963px rgba(33, 29, 248, 0.42);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-container {
+  box-shadow: 0px 4.94845px 33.6495px rgba(194, 194, 194, 0.42);
+  border-radius: 10px;
+}
+.card-container .title {
+  color: var(--colorPrimary);
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card-container .card-el-container {
+  padding: 10px 30px;
+  border-top: 0.5px solid rgba(177, 177, 177, 0.35);
+}
+.card-container p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.fournitures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.fournitures img {
+  width: 30px;
+}
+.fournitures .fn-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fournitures .fn-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-button {
+  font-size: 14px;
+  color: var(--colorPrimary);
+  background: rgba(6, 150, 221, 0.12);
+  border-radius: 10px;
+  padding: 7px 10px;
+  width: max-content;
+  cursor: pointer;
+}
+.bg-button a {
+  color: var(--colorPrimary);
+}
+
+.messages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.messages h3 {
+  font-size: 18px;
+}
+.messages p {
+  font-size: 14px;
+}
+.messages img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

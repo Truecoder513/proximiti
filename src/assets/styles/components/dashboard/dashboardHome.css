@@ -1,0 +1,171 @@
+.dh-home {
+  padding-left: calc(15% + 10px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+}
+/* .dh-home section {
+  background-color: red;
+} */
+/* ------------------- dashboard home left ---------------------- */
+.dh-home .last-connexion {
+  padding: 13px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--colorPrimary);
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.05);
+}
+
+.dh-home .dh-account-data {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+.dh-home .dh-account-data > div {
+  height: 320px;
+}
+.dh-home .dh-account-data > div:nth-child(2) {
+  background: linear-gradient(241.25deg, #c438ef 4.4%, #309aff 119.94%);
+  box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dh-home .dh-fonction {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.dh-home .dh-fonction div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 0px 4.94845px 33.6495px rgba(194, 194, 194, 0.42);
+  border-radius: 10px;
+  padding: 10px;
+}
+.dh-home .dh-fonction div h5 {
+  font-size: 11px;
+  text-align: center;
+}
+
+.dh-last-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+/* --------------------- dashboard home right ------------------------  */
+.profile {
+  box-shadow: 0px 5px 34px rgba(33, 29, 248, 0.09);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.profile .profile-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.profile .profile-img .img-container {
+  height: 90px;
+  width: 90px;
+  border: 50%;
+  filter: drop-shadow(0px 4.1685px 28.3458px rgba(33, 29, 248, 0.22));
+  position: relative;
+}
+.profile .profile-img .img-container circle {
+  fill: none;
+  stroke: url(#GradientColor2);
+  stroke-width: 5px;
+  stroke-dasharray: 280.25;
+}
+
+.profile .profile-img .img-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateZ(271deg);
+}
+.profilInformationContainer {
+  padding: 20px;
+  border-top: 1px dotted #b1b1b1;
+}
+.profilInformationContainer td {
+  font-size: 13px;
+}
+.profilInformationContainer td span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profilInformationContainer button {
+  font-size: 13px;
+}
+.profilInformationContainer tr td:last-child {
+  color: var(--colorPrimary);
+}
+.agentStatut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dotted #b1b1b1;
+  padding-top: 10px;
+}
+
+.agenda {
+  box-shadow: 0px 5px 34px rgba(33, 29, 248, 0.09);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px 20px;
+  font-size: 12px;
+}
+.agenda .agenda-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.agenda div:nth-child(1) svg {
+  color: var(--colorPrimary);
+}
+.agenda .agenda-info {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #b1b1b1;
+}
+
+.agenda .agenda-info p {
+  margin-bottom: 5px;
+}
+.agenda .agenda-info p span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.agenda > p {
+  margin: 5px 0;
+}
+.react-calendar {
+  width: 100% !important;
+  border: 1.06879px solid #d8d8d8;
+  border-radius: 22px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #14a5e4;
+}

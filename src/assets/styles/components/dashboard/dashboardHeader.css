@@ -1,0 +1,104 @@
+.dh-header {
+  padding: 15px 10px;
+  width: 100%;
+  padding-left: calc(15% + 10px);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 5000;
+}
+.dh-header::after {
+  position: absolute;
+  content: "";
+  width: 83.5%;
+  bottom: 0;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.35);
+}
+.dh-header h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.dh-header h1 + p {
+  font-size: 15px;
+}
+.dh-header .dh-header-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.dh-header .dh-header-right div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dh-header .dh-header-right div:first-child svg,
+.dh-header .dh-header-right div:first-child span {
+  cursor: pointer;
+}
+.dh-header .dh-header-right div:first-child svg:first-child,
+.dh-header .dh-header-right div:first-child svg:nth-child(2) {
+  font-size: 25px;
+}
+.dh-header .dh-header-right div:first-child .menu {
+  height: 25px;
+}
+.dh-header .dh-header-right div:first-child .user-notification svg {
+  font-size: 15px !important;
+}
+.dh-header .dh-header-right div:first-child .user-notification {
+  padding: 5px 7px;
+  display: flex;
+  align-self: center;
+  font-size: 15px;
+  gap: 5px;
+  color: white;
+  background: linear-gradient(136.67deg, #14a5e4 8.34%, #211df8 95.26%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 5px 34px rgba(33, 29, 248, 0.42);
+  border-radius: 14px;
+}
+
+.dh-header .dh-header-right .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------------------- dashboard menu ------------------ */
+.menu-item {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: white;
+
+  z-index: 50000;
+  padding: 10px;
+  border: 1px solid rgba(177, 177, 177, 0.35);
+}
+.menu-item div {
+  box-shadow: 0px 2.11964px 14.4135px rgba(194, 194, 194, 0.42);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-item p {
+  text-align: center;
+}
+.menu-item img {
+  width: 30px;
+  height: 30px;
+}
